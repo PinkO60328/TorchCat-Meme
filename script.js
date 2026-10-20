@@ -6,3 +6,4 @@ if(navigator.clipboard)navigator.clipboard.writeText(CA).then(done,fb);else fb()
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.sec .wrap>*').forEach(el=>{el.classList.add('rv');io.observe(el)});
 })();
+(function(){var b=document.getElementById('buybtn');if(!b)return;var u='https://app.uniswap.org/swap';if(/^0x[0-9a-fA-F]{40}$/.test(CA))u+='?outputCurrency='+CA;b.href=u;b.target='_blank';b.rel='noopener';})();
