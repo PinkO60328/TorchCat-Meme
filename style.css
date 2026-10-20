@@ -45,3 +45,8 @@ figure{position:relative;overflow:hidden;border-radius:8px;border:1px solid var(
 .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.rv.in{opacity:1;transform:none}
 @media(max-width:900px){.links{display:none}.bento{grid-template-columns:1fr}.card,.card.big,.card.wide{grid-column:auto;grid-row:auto}.steps{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr}.gal .g2{aspect-ratio:1/1;height:auto}.row{grid-template-columns:40px 1fr;}.row .v{grid-column:2}.row .tag{display:none}.footin{flex-direction:column;align-items:flex-start}.hero-fade{background:linear-gradient(#0a1310b3,#0a1310e6 60%,var(--bg))}}
 @media(max-width:560px){.steps{grid-template-columns:1fr}.btn.sm{display:none}}
+/* globe (three.js) — sits over banner, under copy */
+.globe{position:absolute;inset:0;z-index:1;pointer-events:none}.globe canvas{width:100%!important;height:100%!important;display:block}
+.hero-bg img{opacity:.28}
+.hero-fade{background:linear-gradient(90deg,var(--bg) 0%,#0a1310e6 30%,#0a131040 65%,transparent),linear-gradient(transparent 70%,var(--bg))}
+@media(max-width:767px){.globe{opacity:.55}}
